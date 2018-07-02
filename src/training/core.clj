@@ -178,3 +178,8 @@
   "Problem: https://algoprog.ru/material/p63"
   [coll]
   (keep-indexed #(if (even? %1) %2) coll))
+
+(defn filter-even
+  "Problem: https://algoprog.ru/material/p64"
+  [coll]
+  (->> coll (filter even?)))

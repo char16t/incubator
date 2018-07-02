@@ -111,3 +111,6 @@
 
 (deftest with-even-indexes-test
   (is (= (with-even-indexes [4 5 3 4 2 3]) [4 3 2])))
+
+(deftest filter-even-test
+  (is (= (filter-even [1 2 3 4 5]) [2 4])))
