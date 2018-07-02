@@ -99,3 +99,7 @@
 
 (deftest min-divider-test
   (is (= (min-divider 15) 3)))
+
+(deftest seq-len-test
+  (is (= (seq-len [1 7 9 0 5]) 3)))
+

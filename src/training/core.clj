@@ -154,4 +154,7 @@
       (filter #(= (rem n %) 0)))
     (first)))
 
-  
+(defn seq-len
+  "Problem: https://algoprog.ru/material/p3064"
+  [coll]
+  (count (take-while (fn [x] (not= 0 x)) coll)))
