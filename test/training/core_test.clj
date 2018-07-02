@@ -27,4 +27,6 @@
 
 (deftest dozens-test
   (is (= (dozens 179) 7)))  
-  
+
+(deftest three-digit-sum-test
+  (is (= (three-digit-sum 179) 17)))  

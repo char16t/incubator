@@ -41,3 +41,11 @@
             https://algoprog.ru/material/p2943"
   [n]
   (rem (quot n 10) 10))
+
+(defn three-digit-sum
+  "Problem: https://algoprog.ru/material/p2944"
+  [n]
+  (let [a (rem n 10)
+        b (rem (quot n 10) 10)
+        c (rem (quot (quot n 10) 10) 10)]
+    (+ a b c)))
