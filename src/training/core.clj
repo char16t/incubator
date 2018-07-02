@@ -138,3 +138,9 @@
   (if (some #(= 0 %) lst)
     "YES"
     "NO"))
+
+(defn sqr-list
+  "Problem: https://algoprog.ru/material/p113"
+  [coll]
+  (->> coll
+    (map #(* % %))))

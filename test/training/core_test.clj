@@ -93,3 +93,6 @@
   
 (deftest has-zero-2-test
   (is (= (has-zero [1 2 0 4]) "YES")))
+
+(deftest sqr-list-test
+  (is (= (sqr-list [1 2 3 4]) [1 4 9 16])))
