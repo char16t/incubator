@@ -104,5 +104,8 @@
     "YES"
     "NO"))
 
-
-        
+(defn evens
+  "Problem: https://algoprog.ru/material/p333"
+  [a b]
+  (->> (range a b)
+       (filter even?)))

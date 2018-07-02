@@ -75,3 +75,6 @@
 
 (deftest leap-year-1-test
   (is (= (leap-year 2000) "YES")))
+
+(deftest evens-test
+  (is (= (evens 2 5) [2 4])))
