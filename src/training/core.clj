@@ -131,3 +131,10 @@
   (->>
     (range 1 (inc n))
     (filter #(= (rem n %) 0))))
+
+(defn has-zero
+  "Problem: https://algoprog.ru/material/p347"
+  [lst]
+  (if (some #(= 0 %) lst)
+    "YES"
+    "NO"))

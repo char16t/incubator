@@ -87,3 +87,9 @@
 
 (deftest dividers-test
   (is (= (dividers 6) [1 2 3 6])))
+
+(deftest has-zero-1-test
+  (is (= (has-zero [1 2 3 4]) "NO")))
+  
+(deftest has-zero-2-test
+  (is (= (has-zero [1 2 0 4]) "YES")))
