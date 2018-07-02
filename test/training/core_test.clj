@@ -42,3 +42,9 @@
 
 (deftest price-2-test
   (is (= (price 2 50 4) [10 0])))
+  
+(deftest time-diff-1-test
+  (is (= (time-diff 1 1 1 2 2 2) 3661))) 
+
+(deftest time-diff-2-test
+  (is (= (time-diff 1 2 30 1 3 20) 50)))

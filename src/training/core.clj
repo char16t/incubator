@@ -63,3 +63,9 @@
   (let [k (mod (* b n) 100)
         r (+ (* a n) (quot (* b n) 100))]
   [r k]))
+
+(defn time-diff
+  "Problem: https://algoprog.ru/material/p2952"
+  [h1 m1 s1 h2 m2 s2]
+  (- (+ (* h2 3600) (* m2 60) s2)
+     (+ (* h1 3600) (* m1 60) s1)))
