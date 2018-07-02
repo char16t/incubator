@@ -81,3 +81,6 @@
   
 (deftest factorial-test
   (is (= (factorial 3) 6)))
+
+(deftest sq-sum-test
+  (is (= (sq-sum 2) 5)))

@@ -116,3 +116,12 @@
   (if (= n 0)
     1
     (* n (factorial (- n 1)))))
+    
+(defn sq-sum
+  "Problem: https://algoprog.ru/material/p315"
+  [n]
+  (->>
+    (range 0 (+ n 1))
+    (map #(* % %))
+    (reduce +)))
+
