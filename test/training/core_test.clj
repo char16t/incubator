@@ -18,4 +18,7 @@
 
 (deftest hypotenuse-test
   (is (= (hypotenuse 3 4) 5.0)))        
-         
+
+(deftest last-digit-test
+  (is (= (last-digit 179) 9)))
+

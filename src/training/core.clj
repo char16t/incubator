@@ -30,3 +30,8 @@
   "Problem: https://algoprog.ru/material/p2936"
   [a b]
   (Math/sqrt (+ (* a a) (* b b))))
+
+(defn last-digit
+  "Problem: https://algoprog.ru/material/p2941"
+  [n]
+  (rem n 10))
