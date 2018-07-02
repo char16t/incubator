@@ -48,3 +48,6 @@
 
 (deftest time-diff-2-test
   (is (= (time-diff 1 2 30 1 3 20) 50)))
+
+(deftest mymax-test
+  (is (= (mymax 1 2) 2)))
