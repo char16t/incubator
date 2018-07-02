@@ -90,3 +90,8 @@
     (> n 0) 1
     (< n 0) -1
     (= n 0) 0))
+    
+(defn max3
+  "Problem: https://algoprog.ru/material/p294"
+  [& nums]
+  (apply max nums))

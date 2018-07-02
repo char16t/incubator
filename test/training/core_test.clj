@@ -66,3 +66,6 @@
   
 (deftest sign-3-test
   (is (= (sign 0) 0)))
+
+(deftest max3-test
+  (is (= (max3 1 2 3) 3)))
