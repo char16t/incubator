@@ -36,3 +36,9 @@
   
 (deftest eclock-2-test
   (is (= (eclock 1441) [0 1])))
+  
+(deftest price-1-test
+  (is (= (price 10 15 2) [20 30])))
+
+(deftest price-2-test
+  (is (= (price 2 50 4) [10 0])))

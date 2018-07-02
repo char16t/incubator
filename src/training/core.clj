@@ -56,3 +56,10 @@
   (let [h (mod (quot min 60) 24)
         m (mod min 60)]
   [h m]))
+
+(defn price
+  "Problem: https://algoprog.ru/material/p2951"
+  [a b n]
+  (let [k (mod (* b n) 100)
+        r (+ (* a n) (quot (* b n) 100))]
+  [r k]))
