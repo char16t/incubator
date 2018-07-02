@@ -95,3 +95,14 @@
   "Problem: https://algoprog.ru/material/p294"
   [& nums]
   (apply max nums))
+
+(defn leap-year
+  "Problem: https://algoprog.ru/material/p253"
+  [year]
+  (if (or (and (= (rem year 4) 0) (not= (rem year 100) 0))
+          (= (rem year 400) 0))
+    "YES"
+    "NO"))
+
+
+        

@@ -69,3 +69,9 @@
 
 (deftest max3-test
   (is (= (max3 1 2 3) 3)))
+
+(deftest leap-year-1-test
+  (is (= (leap-year 2007) "NO")))
+
+(deftest leap-year-1-test
+  (is (= (leap-year 2000) "YES")))
