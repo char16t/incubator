@@ -11,3 +11,7 @@
 
 (deftest apples-2-test
   (is (= (apples-2 3 14) 2)))
+
+(deftest next-prev-test
+  (is (= (next-prev 179)
+         "The next number for the number 179 is 180.\nThe previous number for the number 179 is 178.")))
