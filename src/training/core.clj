@@ -191,3 +191,8 @@
     (partition 2 1 coll)
     (map #(if (< (first %) (second %)) 1 0))
     (reduce +)))
+
+(defn myreverse
+  "Problem: https://clojuredocs.org/clojure.core/reverse"
+  [coll]
+  (reverse coll))

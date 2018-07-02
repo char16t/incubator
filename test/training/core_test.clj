@@ -117,3 +117,6 @@
 
 (deftest count-increasing-test
   (is (= (count-increasing [1 2 3 4 5]) 4)))
+
+(deftest myreverse-test
+  (is (= (myreverse [4 5 3 4 2 3]) [3 2 4 3 5 4])))
