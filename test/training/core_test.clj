@@ -24,3 +24,7 @@
 
 (deftest dozens-test
   (is (= (dozens 42) 4)))
+
+(deftest dozens-test
+  (is (= (dozens 179) 7)))  
+  

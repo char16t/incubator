@@ -37,6 +37,7 @@
   (rem n 10))
 
 (defn dozens
-  "Problem: https://algoprog.ru/material/p2942"
+  "Problem: https://algoprog.ru/material/p2942
+            https://algoprog.ru/material/p2943"
   [n]
-  (quot n 10))
+  (rem (quot n 10) 10))
