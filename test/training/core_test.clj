@@ -22,3 +22,5 @@
 (deftest last-digit-test
   (is (= (last-digit 179) 9)))
 
+(deftest dozens-test
+  (is (= (dozens 42) 4)))

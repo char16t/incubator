@@ -35,3 +35,8 @@
   "Problem: https://algoprog.ru/material/p2941"
   [n]
   (rem n 10))
+
+(defn dozens
+  "Problem: https://algoprog.ru/material/p2942"
+  [n]
+  (quot n 10))
