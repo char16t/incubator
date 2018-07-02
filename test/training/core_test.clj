@@ -105,3 +105,6 @@
 
 (deftest seq-sum-test
   (is (= (seq-sum [1 7 9 0 5]) 17)))
+
+(deftest seq-count-even-test
+  (is (= (seq-count-even [2 1 4 0 6 5 2]) 2)))

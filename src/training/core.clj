@@ -165,3 +165,11 @@
   (->>
     (take-while (fn [x] (not= 0 x)) coll)
     (reduce +)))
+
+(defn seq-count-even
+  "Problem: https://algoprog.ru/material/p3067"
+  [coll]
+  (->>
+    (take-while (fn [x] (not= 0 x)) coll)
+    (filter even?)
+    (count)))
