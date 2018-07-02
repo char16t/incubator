@@ -196,3 +196,8 @@
   "Problem: https://clojuredocs.org/clojure.core/reverse"
   [coll]
   (reverse coll))
+
+(defn cycle-move
+  "Problem: https://algoprog.ru/material/p71"
+  [coll]
+  (conj (take (dec (count coll)) coll) (last coll)))
