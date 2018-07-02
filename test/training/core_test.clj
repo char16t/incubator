@@ -84,3 +84,6 @@
 
 (deftest sq-sum-test
   (is (= (sq-sum 2) 5)))
+
+(deftest dividers-test
+  (is (= (dividers 6) [1 2 3 6])))

@@ -125,3 +125,9 @@
     (map #(* % %))
     (reduce +)))
 
+(defn dividers
+  "Problem: https://algoprog.ru/material/p340"
+  [n]
+  (->>
+    (range 1 (inc n))
+    (filter #(= (rem n %) 0))))
