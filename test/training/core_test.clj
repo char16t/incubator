@@ -57,3 +57,12 @@
 
 (deftest max-pos-2-test
   (is (= (max-pos 2 2) 0)))
+  
+(deftest sign-1-test
+  (is (= (sign 2) 1)))
+  
+(deftest sign-2-test
+  (is (= (sign -1) -1)))
+  
+(deftest sign-3-test
+  (is (= (sign 0) 0)))

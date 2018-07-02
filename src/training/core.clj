@@ -82,3 +82,11 @@
     (> a b) 1
     (< a b) 2
     (= a b) 0))
+
+(defn sign
+  "Problem: https://algoprog.ru/material/p2959"
+  [n]
+  (cond
+    (> n 0) 1
+    (< n 0) -1
+    (= n 0) 0))
