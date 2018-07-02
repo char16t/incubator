@@ -25,3 +25,8 @@
       (apply str (concat
         "The next number for the number " curr " is " next ".\n"
         "The previous number for the number " curr " is " prev ".")))))
+
+(defn hypotenuse
+  "Problem: https://algoprog.ru/material/p2936"
+  [a b]
+  (Math/sqrt (+ (* a a) (* b b))))

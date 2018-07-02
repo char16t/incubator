@@ -15,3 +15,7 @@
 (deftest next-prev-test
   (is (= (next-prev 179)
          "The next number for the number 179 is 180.\nThe previous number for the number 179 is 178.")))
+
+(deftest hypotenuse-test
+  (is (= (hypotenuse 3 4) 5.0)))        
+         
