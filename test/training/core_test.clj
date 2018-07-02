@@ -108,3 +108,6 @@
 
 (deftest seq-count-even-test
   (is (= (seq-count-even [2 1 4 0 6 5 2]) 2)))
+
+(deftest with-even-indexes-test
+  (is (= (with-even-indexes [4 5 3 4 2 3]) [4 3 2])))

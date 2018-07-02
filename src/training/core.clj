@@ -173,3 +173,8 @@
     (take-while (fn [x] (not= 0 x)) coll)
     (filter even?)
     (count)))
+
+(defn with-even-indexes
+  "Problem: https://algoprog.ru/material/p63"
+  [coll]
+  (keep-indexed #(if (even? %1) %2) coll))
