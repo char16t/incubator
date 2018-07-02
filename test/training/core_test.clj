@@ -114,3 +114,6 @@
 
 (deftest filter-even-test
   (is (= (filter-even [1 2 3 4 5]) [2 4])))
+
+(deftest count-increasing-test
+  (is (= (count-increasing [1 2 3 4 5]) 4)))

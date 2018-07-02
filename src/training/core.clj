@@ -183,3 +183,11 @@
   "Problem: https://algoprog.ru/material/p64"
   [coll]
   (->> coll (filter even?)))
+
+(defn count-increasing
+  "Problem: https://algoprog.ru/material/p66"
+  [coll]
+  (->>
+    (partition 2 1 coll)
+    (map #(if (< (first %) (second %)) 1 0))
+    (reduce +)))
