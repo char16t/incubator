@@ -103,3 +103,5 @@
 (deftest seq-len-test
   (is (= (seq-len [1 7 9 0 5]) 3)))
 
+(deftest seq-sum-test
+  (is (= (seq-sum [1 7 9 0 5]) 17)))
