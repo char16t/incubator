@@ -74,3 +74,11 @@
   "Problem: https://algoprog.ru/material/p292"
   [a b]
   (max a b))
+
+(defn max-pos
+  "Problem: https://algoprog.ru/material/p293"
+  [a b]
+  (cond
+    (> a b) 1
+    (< a b) 2
+    (= a b) 0))

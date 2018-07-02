@@ -51,3 +51,9 @@
 
 (deftest mymax-test
   (is (= (mymax 1 2) 2)))
+
+(deftest max-pos-1-test
+  (is (= (max-pos 1 2) 2)))
+
+(deftest max-pos-2-test
+  (is (= (max-pos 2 2) 0)))
