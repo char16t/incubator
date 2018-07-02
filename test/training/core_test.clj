@@ -96,3 +96,6 @@
 
 (deftest sqr-list-test
   (is (= (sqr-list [1 2 3 4]) [1 4 9 16])))
+
+(deftest min-divider-test
+  (is (= (min-divider 15) 3)))

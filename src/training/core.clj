@@ -144,3 +144,14 @@
   [coll]
   (->> coll
     (map #(* % %))))
+
+(defn min-divider
+  "Problem: https://algoprog.ru/material/p3058"
+  [n]
+  (->>
+    (->>
+      (range 2 (inc n))
+      (filter #(= (rem n %) 0)))
+    (first)))
+
+  
