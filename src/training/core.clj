@@ -109,3 +109,10 @@
   [a b]
   (->> (range a b)
        (filter even?)))
+
+(defn factorial
+  "Problem: https://algoprog.ru/material/p351"
+  [n]
+  (if (= n 0)
+    1
+    (* n (factorial (- n 1)))))

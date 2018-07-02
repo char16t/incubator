@@ -78,3 +78,6 @@
 
 (deftest evens-test
   (is (= (evens 2 5) [2 4])))
+  
+(deftest factorial-test
+  (is (= (factorial 3) 6)))
