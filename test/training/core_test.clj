@@ -29,4 +29,10 @@
   (is (= (dozens 179) 7)))  
 
 (deftest three-digit-sum-test
-  (is (= (three-digit-sum 179) 17)))  
+  (is (= (three-digit-sum 179) 17))) 
+
+(deftest eclock-1-test
+  (is (= (eclock 150) [2 30])))
+  
+(deftest eclock-2-test
+  (is (= (eclock 1441) [0 1])))

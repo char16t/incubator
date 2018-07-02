@@ -49,3 +49,10 @@
         b (rem (quot n 10) 10)
         c (rem (quot (quot n 10) 10) 10)]
     (+ a b c)))
+
+(defn eclock
+  "Problem: https://algoprog.ru/material/p2947"
+  [min]
+  (let [h (mod (quot min 60) 24)
+        m (mod min 60)]
+  [h m]))
