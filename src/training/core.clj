@@ -201,3 +201,10 @@
   "Problem: https://algoprog.ru/material/p71"
   [coll]
   (conj (take (dec (count coll)) coll) (last coll)))
+
+(defn symmetrix-matrix
+  "Problem: https://algoprog.ru/material/p355"
+  [m]
+  (if (= m (apply mapv vector m))
+    "yes"
+    "no"))

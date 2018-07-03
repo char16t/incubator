@@ -123,3 +123,9 @@
 
 (deftest cycle-move-test
   (is (= (cycle-move [4 5 3 4 2 3]) [3 4 5 3 4 2])))
+
+(deftest symmetrix-matrix-1-test
+  (is (= (symmetrix-matrix [[0 1 2] [1 5 3] [2 3 4]]) "yes")))
+  
+(deftest symmetrix-matrix-2-test
+  (is (= (symmetrix-matrix [[0 0 0] [0 0 0] [1 0 0]]) "no")))
