@@ -201,3 +201,12 @@
   "Problem: https://algoprog.ru/material/p71"
   [coll]
   (conj (take (dec (count coll)) coll) (last coll)))
+
+(defn is-palindrome
+  "Problem: https://algoprog.ru/material/p108"
+  [s]
+  (if (= s (apply str (reverse s)))
+    "yes"
+    "no"))
+
+  

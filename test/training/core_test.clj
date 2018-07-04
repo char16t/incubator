@@ -123,3 +123,6 @@
 
 (deftest cycle-move-test
   (is (= (cycle-move [4 5 3 4 2 3]) [3 4 5 3 4 2])))
+
+(deftest is-palindrome-test
+  (is (= (is-palindrome "abba") "yes")))
