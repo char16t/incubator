@@ -209,4 +209,10 @@
     "yes"
     "no"))
 
-  
+(defn symmetrix-matrix
+  "Problem: https://algoprog.ru/material/p355"
+  [m]
+  (if (= m (apply mapv vector m))
+    "yes"
+    "no"))
+
