@@ -216,3 +216,8 @@
     "yes"
     "no"))
 
+(defn count-words
+  "Problem: https://algoprog.ru/material/p106"
+  [text]
+  (let [first-line (first (clojure.string/split-lines text))]
+    (count (clojure.string/split first-line #"\s"))))

@@ -133,3 +133,5 @@
 (deftest symmetrix-matrix-2-test
   (is (= (symmetrix-matrix [[0 0 0] [0 0 0] [1 0 0]]) "no")))
 
+(deftest count-words-test
+  (is (= (count-words "In the town where I was born") 7)))
