@@ -221,3 +221,10 @@
   [text]
   (let [first-line (first (clojure.string/split-lines text))]
     (count (clojure.string/split first-line #"\s"))))
+
+(defn is-digit
+  "Problem: https://algoprog.ru/material/p102"
+  [s]
+  (if (Character/isDigit s)
+    "yes"
+    "no"))
