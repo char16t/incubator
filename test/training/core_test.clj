@@ -137,7 +137,10 @@
   (is (= (count-words "In the town where I was born") 7)))
 
 (def is-digit-1-test
-  (is (= (is-digit "2") "yes")))
+  (is (= (is-digit \2) "yes")))
   
 (def is-digit-2-test
-  (is (= (is-digit "c") "no")))
+  (is (= (is-digit \c) "no")))
+
+(def to-upper-test
+  (is (= (to-upper "c") "C")))

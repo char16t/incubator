@@ -228,3 +228,8 @@
   (if (Character/isDigit s)
     "yes"
     "no"))
+    
+(defn to-upper
+  "Problem: https://algoprog.ru/material/p103"
+  [s]
+  (clojure.string/upper-case s))
