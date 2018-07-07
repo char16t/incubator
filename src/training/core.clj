@@ -233,3 +233,13 @@
   "Problem: https://algoprog.ru/material/p103"
   [s]
   (clojure.string/upper-case s))
+
+(defn check-equation
+  "Problem: https://algoprog.ru/material/p74"
+  [a b c]
+  (let [diff (Math/abs (- c (+ a b)))]
+    (if (< diff 0.00001)
+    "YES"
+    "NO")))
+
+  

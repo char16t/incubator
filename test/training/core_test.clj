@@ -144,3 +144,9 @@
 
 (def to-upper-test
   (is (= (to-upper "c") "C")))
+
+(deftest check-equation-1-test
+  (is (= (check-equation 2 3 7) "NO")))
+
+(deftest check-equation-2-test
+  (is (= (check-equation 0.1 0.2 0.3) "YES")))
