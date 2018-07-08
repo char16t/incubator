@@ -242,4 +242,16 @@
     "YES"
     "NO")))
 
+(defn clock-angle
+  "Problem: https://algoprog.ru/material/p3612"
+  [h m s]
+  (let [ha (/ 360 12)
+        ma (/ 360 (* 12 60))
+	sa (/ 360 (* 12 60 60))]
+    (double
+      (+
+        (* ha h)
+        (* ma m)
+        (* sa s)))))
+
   

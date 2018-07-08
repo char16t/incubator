@@ -150,3 +150,6 @@
 
 (deftest check-equation-2-test
   (is (= (check-equation 0.1 0.2 0.3) "YES")))
+
+(deftest clock-angle-test
+  (is (= (clock-angle 1 2 6) 31.05)))
