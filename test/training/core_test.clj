@@ -153,3 +153,9 @@
 
 (deftest clock-angle-test
   (is (= (clock-angle 1 2 6) 31.05)))
+
+(deftest morning-jogging-1-1-test
+  (is (= (morning-jogging-1 10 30) 4)))
+
+(deftest morning-jogging-1-2-test
+  (is (= (morning-jogging-1 10 50) 5)))

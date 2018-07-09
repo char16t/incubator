@@ -253,5 +253,8 @@
         (* ha h)
         (* ma m)
         (* sa s)))))
-
-  
+        
+(defn morning-jogging-1
+  "https://algoprog.ru/material/p596"
+  [x y]
+  (reduce (fn [a c] (if (>= a y) (reduced c) (+ a (* a 0.7)))) x (range 1 100000)))
