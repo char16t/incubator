@@ -159,3 +159,6 @@
 
 (deftest morning-jogging-1-2-test
   (is (= (morning-jogging-1 10 50) 5)))
+
+(deftest sum-2-test
+  (is (= (sum-2 1) 2)))

@@ -258,3 +258,12 @@
   "https://algoprog.ru/material/p596"
   [x y]
   (reduce (fn [a c] (if (>= a y) (reduced c) (+ a (* a 0.7)))) x (range 1 100000)))
+  
+(defn sum-2
+  "Problem: https://algoprog.ru/material/p120"
+  [n]
+  (first
+    (reduce 
+      (fn [a c] [(+ (first a)(/ 1 c)) (inc c)])
+      [1 1]
+      (range 1 (inc n)))))
