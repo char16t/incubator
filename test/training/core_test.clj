@@ -162,3 +162,6 @@
 
 (deftest sum-2-test
   (is (= (sum-2 1) 2)))
+
+(deftest school-desks-test
+  (is (= (school-desks 20 21 22) 32)))

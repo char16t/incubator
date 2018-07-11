@@ -267,3 +267,10 @@
       (fn [a c] [(+ (first a)(/ 1 c)) (inc c)])
       [1 1]
       (range 1 (inc n)))))
+ 
+(defn school-desks
+  "Problem: https://algoprog.ru/material/p2946"
+  [a b c]
+  (int (Math/ceil
+    (/ (+ a b c) 2))))
+
