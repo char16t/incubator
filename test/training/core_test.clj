@@ -171,3 +171,10 @@
   
 (deftest merge-sort-2-test
   (is (= (merge-sort []) [])))
+
+(deftest next-even-1-test
+  (is (= (next-even 8) 10)))
+
+(deftest next-even-2-test
+  (is (= (next-even 7) 8)))
+

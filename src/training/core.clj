@@ -296,3 +296,8 @@
         (merge-sort left)
         (merge-sort right)
         []))))
+
+(defn next-even
+  "https://algoprog.ru/material/p2945"
+  [n]
+  (int (* 2 (Math/ceil (/ (inc n) 2)))))
