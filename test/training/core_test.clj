@@ -165,3 +165,9 @@
 
 (deftest school-desks-test
   (is (= (school-desks 20 21 22) 32)))
+
+(deftest merge-sort-1-test
+  (is (= (merge-sort [4 3 2 1]) [1 2 3 4])))
+  
+(deftest merge-sort-2-test
+  (is (= (merge-sort []) [])))

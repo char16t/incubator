@@ -257,7 +257,10 @@
 (defn morning-jogging-1
   "https://algoprog.ru/material/p596"
   [x y]
-  (reduce (fn [a c] (if (>= a y) (reduced c) (+ a (* a 0.7)))) x (range 1 100000)))
+  (reduce
+    (fn [a c] (if (>= a y) (reduced c) (+ a (* a 0.7))))
+    x
+    (range 1 100000)))
   
 (defn sum-2
   "Problem: https://algoprog.ru/material/p120"
@@ -274,3 +277,22 @@
   (int (Math/ceil
     (/ (+ a b c) 2))))
 
+(defn- merge-sort-merge
+  [[lhead & ltail :as left] [rhead & rtail :as right] result]
+  (if (and (not-empty left) (not-empty right))
+    (if (<= lhead rhead)
+      (recur ltail right (conj result lhead))
+      (recur left rtail (conj result rhead)))
+    (concat result left right)))
+
+(defn merge-sort
+  [coll]
+  (if (< (count coll) 2)
+    coll
+    (let [middle (int (/ (count coll) 2))
+          left (subvec coll 0 middle)
+          right (subvec coll middle)]
+      (merge-sort-merge
+        (merge-sort left)
+        (merge-sort right)
+        []))))
