@@ -178,3 +178,11 @@
 (deftest next-even-2-test
   (is (= (next-even 7) 8)))
 
+(deftest lines-in-book-1-test
+  (is (= (lines-in-book 50 1) [1 1])))
+
+(deftest lines-in-book-2-test
+  (is (= (lines-in-book 20 25) [2 5])))
+
+(deftest lines-in-book-3-test
+  (is (= (lines-in-book 15 43) [3 13])))

@@ -301,3 +301,9 @@
   "https://algoprog.ru/material/p2945"
   [n]
   (int (* 2 (Math/ceil (/ (inc n) 2)))))
+
+(defn lines-in-book
+  "Problem: https://algoprog.ru/material/p506"
+  [k n]
+  [(int (Math/ceil (/ n k)))
+   (rem n k)])
