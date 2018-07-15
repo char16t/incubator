@@ -307,3 +307,16 @@
   [k n]
   [(int (Math/ceil (/ n k)))
    (rem n k)])
+
+(defn longest-word
+  "Problem: https://algoprog.ru/material/p107"
+  [words]
+  (let [lw
+    (reduce
+      (fn [longest word]
+        (if (> (count word) (count longest))
+          word
+	  longest))
+    words)]
+    [lw (count lw)]))
+

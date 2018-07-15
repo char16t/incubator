@@ -186,3 +186,6 @@
 
 (deftest lines-in-book-3-test
   (is (= (lines-in-book 15 43) [3 13])))
+
+(deftest longest-word-test
+  (is (= (longest-word ["one" "two" "three" "four" "five" "six"]) ["three" 5])))
