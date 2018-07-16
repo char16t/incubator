@@ -320,3 +320,10 @@
     words)]
     [lw (count lw)]))
 
+(defn split-number
+  "Problem: https://algoprog.ru/material/p792"
+  [n]
+  (->> (partition-all 3 (reverse (str n)))
+    (map #(apply str (reverse %)))
+    (reverse)
+    (clojure.string/join ",")))

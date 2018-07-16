@@ -189,3 +189,15 @@
 
 (deftest longest-word-test
   (is (= (longest-word ["one" "two" "three" "four" "five" "six"]) ["three" 5])))
+
+(deftest split-number-1-test
+  (is (= (split-number 12345) "12,345")))
+
+(deftest split-number-2-test
+  (is (= (split-number 1000) "1,000")))
+
+(deftest split-number-3-test
+  (is (= (split-number 12345678) "12,345,678")))
+
+(deftest split-number-4-test
+  (is (= (split-number 999) "999")))
