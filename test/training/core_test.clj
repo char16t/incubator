@@ -201,3 +201,9 @@
 
 (deftest split-number-4-test
   (is (= (split-number 999) "999")))
+
+(deftest two-same-letters-1-test
+  (is (= (two-same-letters "hello") "l")))
+  
+(deftest two-same-letters-2-test
+  (is (= (two-same-letters "fif") "f")))

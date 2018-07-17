@@ -327,3 +327,16 @@
     (map #(apply str (reverse %)))
     (reverse)
     (clojure.string/join ",")))
+
+(defn two-same-letters
+  "Problem: https://algoprog.ru/material/p109"
+  [word]
+  (->> (seq word)
+    (reduce
+      (fn [acc curr]
+        (update-in acc [curr] (fnil inc 0)))
+      {})
+    (seq)
+    (filter #(= (second %) 2))
+    (ffirst)
+    (str)))
