@@ -340,3 +340,27 @@
     (filter #(= (second %) 2))
     (ffirst)
     (str)))
+
+(defn sandwich
+  "Problem: https://algoprog.ru/material/p723"
+  [enc]
+  (->> (partition-all 2 (seq (take (dec (count enc)) enc)))
+    (reduce
+      (fn [acc curr]
+        {:pre
+          (apply str 
+            (concat
+              (get acc :pre)
+              (str (first curr))))
+         :post
+          (apply str
+            (concat
+              (str (second curr))
+              (get acc :post)))})
+      {:pre "" :post ""})
+    (seq)
+    (map second)
+    (apply concat)
+    (apply str)))
+
+  

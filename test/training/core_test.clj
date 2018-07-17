@@ -207,3 +207,6 @@
   
 (deftest two-same-letters-2-test
   (is (= (two-same-letters "fif") "f")))
+
+(deftest sandwich-test
+  (is (= (sandwich "Aabrrbaacda#") "Abracadabra")))
