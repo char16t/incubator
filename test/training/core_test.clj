@@ -136,13 +136,13 @@
 (deftest count-words-test
   (is (= (count-words "In the town where I was born") 7)))
 
-(def is-digit-1-test
+(deftest is-digit-1-test
   (is (= (is-digit \2) "yes")))
   
-(def is-digit-2-test
+(deftest is-digit-2-test
   (is (= (is-digit \c) "no")))
 
-(def to-upper-test
+(deftest to-upper-test
   (is (= (to-upper "c") "C")))
 
 (deftest check-equation-1-test
@@ -210,3 +210,9 @@
 
 (deftest sandwich-test
   (is (= (sandwich "Aabrrbaacda#") "Abracadabra")))
+
+(deftest fraction-reduction-1-test
+  (is (= (fraction-reduction 3 6) [1 2])))
+
+(deftest fraction-reduction-2-test
+  (is (= (fraction-reduction -2 5) [-2 5])))
