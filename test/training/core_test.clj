@@ -216,3 +216,9 @@
 
 (deftest fraction-reduction-2-test
   (is (= (fraction-reduction -2 5) [-2 5])))
+
+(deftest digits-test
+  (is
+    (=
+      (digits [1 1 4 1 5 8 6 3 5 1 0])
+      [4 0 1 1 2 1 0 1 0])))

@@ -371,3 +371,17 @@
   [a b]
   (let [gcd (gcd a b)]
     [(/ a gcd) (/ b gcd)]))
+
+(defn digits
+  "Problem: https://algoprog.ru/material/p1568"
+  [coll]
+  (let [c (frequencies coll)]
+    [(get c 1 0)
+     (get c 2 0)
+     (get c 3 0)
+     (get c 4 0)
+     (get c 5 0)
+     (get c 6 0)
+     (get c 7 0)
+     (get c 8 0)
+     (get c 9 0)]))
