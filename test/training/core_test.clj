@@ -211,6 +211,9 @@
 (deftest sandwich-test
   (is (= (sandwich "Aabrrbaacda#") "Abracadabra")))
 
+(deftest gcd-test
+  (is (= (gcd 9 12) 3)))
+
 (deftest fraction-reduction-1-test
   (is (= (fraction-reduction 3 6) [1 2])))
 

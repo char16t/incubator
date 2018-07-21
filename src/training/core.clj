@@ -363,8 +363,10 @@
     (apply concat)
     (apply str)))
 
-(defn- gcd [a b]
-    (if (zero? b) a (recur b (mod a b))))
+(defn gcd
+  "Problem: https://algoprog.ru/material/p199"
+  [a b]
+  (if (zero? b) a (recur b (mod a b))))
 
 (defn fraction-reduction
   "Problem: https://algoprog.ru/material/p27"
