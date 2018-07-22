@@ -225,3 +225,7 @@
     (=
       (digits [1 1 4 1 5 8 6 3 5 1 0])
       [4 0 1 1 2 1 0 1 0])))
+
+(deftest binary-strings-test
+  (is
+    (= (binary-strings 2) '([0 0] [0 1] [1 0] [1 1]))))

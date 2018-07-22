@@ -387,3 +387,17 @@
      (get c 7 0)
      (get c 8 0)
      (get c 9 0)]))
+
+(defn binary-strings
+  "Problem: https://algoprog.ru/material/p80"
+  [n]
+  (def inner (fn [length prefix strings]
+    (if (< (count prefix) length)
+      (concat
+        (apply (partial conj strings)
+          (inner length (conj prefix 0) strings))
+        (apply (partial conj strings)
+          (inner length (conj prefix 1) strings)))
+      [prefix])))
+  (inner n [] []))
+
