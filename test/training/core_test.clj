@@ -229,3 +229,6 @@
 (deftest binary-strings-test
   (is
     (= (binary-strings 2) '([0 0] [0 1] [1 0] [1 1]))))
+
+(deftest binary-strings-with-ones-test
+  (is (= (binary-strings-with-ones 4 2) '([0 0 1 1] [0 1 0 1] [0 1 1 0] [1 0 0 1] [1 0 1 0] [1 1 0 0]))))

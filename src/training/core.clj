@@ -401,3 +401,9 @@
       [prefix])))
   (inner n [] []))
 
+(defn binary-strings-with-ones
+  "Problem: https://algoprog.ru/material/p84"
+  [length ones]
+  (filter
+    #(= (get (frequencies %) 1 0) ones)
+    (binary-strings length)))
