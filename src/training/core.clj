@@ -407,3 +407,16 @@
   (filter
     #(= (get (frequencies %) 1 0) ones)
     (binary-strings length)))
+
+(defn censorship
+  "Problem: https://algoprog.ru/material/p426"
+  [phrases]
+  (filter
+    (fn [phrase]
+      (let [words (clojure.string/split phrase #" ")
+            pure-words (map #(clojure.string/replace % #"\.|\!" {"." "" "!" ""}) words)
+            censored (map #(> (count (frequencies %)) 3) pure-words)
+            censored-count (count (filter #(= % true) censored))
+            censored-limit (int (/ (count words) 2))]
+        (> censored-count censored-limit)))
+    phrases))
