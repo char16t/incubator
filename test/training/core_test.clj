@@ -250,3 +250,15 @@
        "She loves you! Yeah, Yeah, Yeah!"
        "Хрен редьки не слаще"
        "Спасибо за внимание."])))
+
+(deftest count-smiles-test
+  (is (= (count-smiles "") 0))
+  (is (= (count-smiles ":-)") 1))
+  (is (= (count-smiles ":)") 1))
+  (is (= (count-smiles ";---------[[[[[[[[") 1))
+  (is (= (count-smiles ":-)]") 0))
+  (is (= (count-smiles ";--") 0))
+  (is (= (count-smiles "-)") 0))
+  (is (= (count-smiles "::-(") 0))
+  (is (= (count-smiles ":-()") 0))
+  (is (= (count-smiles ":-) :-() ;-[") 2)))

@@ -420,3 +420,8 @@
             censored-limit (int (/ (count words) 2))]
         (> censored-count censored-limit)))
     phrases))
+
+(defn count-smiles
+  "Problem: https://algoprog.ru/material/p1629"
+  [string]
+  (count (re-seq #"(^|\s)((?::|;)(?:-*)?(?:\)+($|\s)|\(+($|\s)|\]+($|\s)|\[+($|\s)))" string)))
