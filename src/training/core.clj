@@ -433,4 +433,9 @@
     "NO"
     "YES"))
 
-  
+(defn fib-last-digit
+  "Problem: https://algoprog.ru/material/p842"
+  [n]
+  (let [fib-seq ((fn rfib [a b] 
+     (lazy-seq (cons a (rfib b (+ a b))))) 1 1)]
+    (rem (nth fib-seq n) 10)))

@@ -267,3 +267,6 @@
   (is (= (ege "2x+3=5") "YES"))
   (is (= (ege "3x+3=6") "NO"))
   (is (= (ege "x-10=3x+4") "NO")))
+
+(deftest fib-last-digit-test
+  (is (= (fib-last-digit 4) 5)))
