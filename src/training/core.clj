@@ -425,3 +425,12 @@
   "Problem: https://algoprog.ru/material/p1629"
   [string]
   (count (re-seq #"(^|\s)((?::|;)(?:-*)?(?:\)+($|\s)|\(+($|\s)|\]+($|\s)|\[+($|\s)))" string)))
+
+(defn ege
+  "Problem: https://algoprog.ru/material/p1629"
+  [task]
+  (if (> (count (re-seq #"[6-9]{1}|\d{2,}" task)) 0)
+    "NO"
+    "YES"))
+
+  
