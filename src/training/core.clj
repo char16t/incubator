@@ -439,3 +439,10 @@
   (let [fib-seq ((fn rfib [a b] 
      (lazy-seq (cons a (rfib b (+ a b))))) 1 1)]
     (rem (nth fib-seq n) 10)))
+
+(defn fib
+  "Problem: https://algoprog.ru/material/p201"
+  [n]
+  (let [fib-seq ((fn rfib [a b] 
+     (lazy-seq (cons a (rfib b (+ a b))))) 0 1)]
+    (nth fib-seq n)))

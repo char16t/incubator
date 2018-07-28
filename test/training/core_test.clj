@@ -270,3 +270,7 @@
 
 (deftest fib-last-digit-test
   (is (= (fib-last-digit 4) 5)))
+
+(deftest fib-test
+  (is (= (fib 2) 1))
+  (is (= (fib 5) 5)))
