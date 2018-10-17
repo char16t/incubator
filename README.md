@@ -14,7 +14,7 @@ lein test
 ./build.sh
 ```
 
-Исходные тесты задач не публикуются в этом репозитории. Их можно найти по ссылкам:
+Исходные тексты задач не публикуются в этом репозитории. Их можно найти по ссылкам:
 
  * https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=<PROBLEM_ID>
  * https://algoprog.ru/material/p<PROBLEM_ID>
