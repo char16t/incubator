@@ -62,8 +62,8 @@ lein test
        * [Цифры](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1568) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1568.cpp))
      + 1В: Продвинутые задачи на вещественные числа
        * [Первая цифра после точки](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3609) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p3609.cpp))
-       * [a + b = c](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=74) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p74.cpp))
-       * [Диета](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=595) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p595.cpp))
+       * [a + b = c](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=74) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p74.c))
+       * [Диета](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=595) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p595.c))
      + 1В: Продвинутые задачи на строки
        * [Самое длинное слово](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=107) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p107.cpp))
    - Уровень 1Г
