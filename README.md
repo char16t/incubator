@@ -21,56 +21,60 @@ lein test
  
 `PROBLEM_ID` содержится в имени файла с решением.
 
+---
+
 **Список решённых задач**:
+
+Приведены ссылки на исходные тексты задач и ссылка на решение, которое хранится в этом репозитории.
 
  * Уровень 1
    - Уровень 1Б
      + 1Б: Задачи на вещественные числа
-       * [a + b = c](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=74)
-       * [Часы - 1](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3612)
-       * [Утренняя пробежка - 1](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=596)
-       * [Утренняя пробежка - 2](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=597)
-       * [Диета](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=595)
-       * [1/0!+1/1!+1/2!+...](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=120)
+       * [a + b = c](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=74) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p74.c))
+       * [Часы - 1](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3612) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p3612.c))
+       * [Утренняя пробежка - 1](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=596) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p596.c))
+       * [Утренняя пробежка - 2](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=597) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p597.c))
+       * [Диета](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=595) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p595.c))
+       * [1/0!+1/1!+1/2!+...](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=120) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p120.c))
    - Уровень 1В
      + 1В: Продвинутые задачи на арифметические операции: в них запрещается пользоваться if'ами и циклами
-       * [Парты](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2946)
-       * [Следующее четное](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2945)
-       * [Строки в книге](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=506)
-       * [Ваня наблюдает за лягушкой](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=534)
+       * [Парты](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2946) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p2946.c))
+       * [Следующее четное](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2945) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p2945.c))
+       * [Строки в книге](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=506) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p506.c))
+       * [Ваня наблюдает за лягушкой](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=534) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p534.c))
      + 1В: Продвинутые задачи на условный оператор: в них запрещено пользоваться циклами и массивами
-       * [Ход ладьи](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=297)
-       * [Слон](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=255)
-       * [Шоколадка](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=258)
-       * [Электричка](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=38)
-       * [Мороженое](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=264)
-       * [Уравнение](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=235)
-       * [Коровы](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=303)
+       * [Ход ладьи](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=297) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p297.c))
+       * [Слон](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=255) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p255.c))
+       * [Шоколадка](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=258) ([**C**](https://github.com/char16t/training/blob/master/algoprog.ru/p258.c))
+       * [Электричка](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=38) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p38.cpp))
+       * [Мороженое](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=264) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p264.cpp))
+       * [Уравнение](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=235) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p235.cpp))
+       * [Коровы](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=303) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p303.cpp))
      + 1В: Продвинутые задачи на циклы: в них запрещается пользоваться массивами
-       * [Максимальный элемент массива](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=227)
-       * [Номер максимального элемента массива](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=228)
-       * [Количество элементов, равных максимуму](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3072)
-       * [Максимальное число идущих подряд равных элементов](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3077)
-       * [ГНЧЭ-1](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1430)
+       * [Максимальный элемент массива](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=227) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p227.cpp))
+       * [Номер максимального элемента массива](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=228) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p228.cpp))
+       * [Количество элементов, равных максимуму](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3072) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p3072.cpp))
+       * [Максимальное число идущих подряд равных элементов](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3077) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p3077.cpp))
+       * [ГНЧЭ-1](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1430) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1430.cpp))
      + 1В: Продвинутые задачи на массивы
-       * [Шеренга](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1456)
-       * [Числа Фибоначи](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=201)
-       * [Цифры](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1568)
+       * [Шеренга](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1456) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1456.cpp))
+       * [Числа Фибоначи](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=201) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p201.cpp))
+       * [Цифры](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1568) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1568.cpp))
      + 1В: Продвинутые задачи на вещественные числа
-       * [Первая цифра после точки](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3609)
-       * [a + b = c](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=74)
-       * [Диета](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=595)
+       * [Первая цифра после точки](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3609) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p3609.cpp))
+       * [a + b = c](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=74) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p74.cpp))
+       * [Диета](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=595) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p595.cpp))
      + 1В: Продвинутые задачи на строки
-       * [Самое длинное слово](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=107)
+       * [Самое длинное слово](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=107) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p107.cpp))
    - Уровень 1Г
      + 1Г: Дополнительные задачи на разные темы - 1
-       * [Электронные часы - 2](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3469)
-       * [Улитка](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3477)
-       * [Конец уроков](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3472)
-       * [Дележ яблок - 3](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2954)
-       * [Фибоначчиева последовательность](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1370)
+       * [Электронные часы - 2](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3469) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p3469.cpp))
+       * [Улитка](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3477) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p3477.cpp))
+       * [Конец уроков](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=3472) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p3472.cpp))
+       * [Дележ яблок - 3](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2954) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p2954.cpp))
+       * [Фибоначчиева последовательность](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1370)  ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1370.cpp))
      + 1Г: Дополнительные задачи на разные темы - 2
-       * [Симметричная последовательность](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=507)
-       * [Метро](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=511)
+       * [Симметричная последовательность](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=507)  ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p507.cpp))
+       * [Метро](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=511) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p511.cpp))
      + 1Г: Дополнительные задачи на разные темы - 3
-       * [IP-адрес](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1435)
+       * [IP-адрес](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1435) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1435.cpp))
