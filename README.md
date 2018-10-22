@@ -78,3 +78,7 @@ lein test
        * [Метро](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=511) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p511.cpp))
      + 1Г: Дополнительные задачи на разные темы - 3
        * [IP-адрес](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1435) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1435.cpp))
+ * Уровень 2
+   - Уровень 1А
+     + 1Б: Задачи на НОД
+       * [НОД](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=199) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p199.cpp))
