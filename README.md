@@ -83,3 +83,4 @@ lein test
      + 2А: Задачи на НОД
        * [НОД](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=199) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p199.cpp))
        * [Сокращение дроби](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=27) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p27.cpp))
+       * [Отрезок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1838) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1838.cpp))
