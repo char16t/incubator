@@ -84,3 +84,5 @@ lein test
        * [НОД](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=199) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p199.cpp))
        * [Сокращение дроби](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=27) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p27.cpp))
        * [Отрезок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1838) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1838.cpp))
+     + 2А: \*Задачи на рекурсивный перебор
+       * [Двоичные строки заданной длины](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=80) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p80.cpp))
