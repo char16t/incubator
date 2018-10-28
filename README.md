@@ -87,3 +87,4 @@ lein test
      + 2А: \*Задачи на рекурсивный перебор
        * [Двоичные строки заданной длины](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=80) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p80.cpp))
        * [Все двоичные строки длины n, содержащие ровно k единиц](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=84) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p84.cpp))
+       * [Все перестановки заданной длины](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=85) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p85.cpp))
