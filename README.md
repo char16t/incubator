@@ -90,4 +90,4 @@ lein test
        * [Все перестановки заданной длины](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=85) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p85.cpp))
        * [Разбиение на невозрастающие слагаемые, лексикографический порядок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=89) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p89.cpp))
        * [Разбиение на невозрастающие слагаемые, обратный порядок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=90) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p90.cpp))
-       *[Разбиение на неубывающие слагаемые, лексикографический порядок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=91) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p91.cpp))
+       * [Разбиение на неубывающие слагаемые, лексикографический порядок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=91) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p91.cpp))
