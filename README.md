@@ -93,4 +93,5 @@ lein test
        * [Разбиение на неубывающие слагаемые, лексикографический порядок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=91) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p91.cpp))
      + 2А: Задачи на квадратичные сортировки
        * [Сортировка выбором максимума](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=230) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p230.cpp))
+       * [Библиотечный метод](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1436) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1436.cpp))
        * [Пузырьковая сортировка: количество обменов](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1411) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1411.cpp))
