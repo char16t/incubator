@@ -96,6 +96,7 @@ lein test
        * [Библиотечный метод](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1436) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1436.cpp))
        * [Пузырьковая сортировка: количество обменов](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1411) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1411.cpp))
        * [Скидки](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1099) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1099.cpp))
+       * [Обувной магазин](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=39) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p39.cpp))
    - Уровень 2Б
      + 2Б: Простые задачи на ДП
        * [Последняя цифра числа Фибоначчи](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=842) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p842.cpp))
