@@ -105,4 +105,5 @@ lein test
        * [Простая последовательность](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=843) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p843.cpp))
        * [Взрывоопасность](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=913) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p913.cpp))
        * [Без трех единиц](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=912) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p912.cpp))
+       * [Взрывоопасность-2](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=914) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p914.cpp))
 
