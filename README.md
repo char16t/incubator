@@ -104,4 +104,5 @@ lein test
        * [Последняя цифра числа Фибоначчи](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=842) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p842.cpp))
        * [Простая последовательность](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=843) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p843.cpp))
        * [Взрывоопасность](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=913) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p913.cpp))
+       * [Без трех единиц](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=912) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p912.cpp))
 
