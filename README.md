@@ -108,4 +108,5 @@ lein test
        * [Взрывоопасность-2](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=914) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p914.cpp))
        * [Платная лестница](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=915) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p915.cpp))
        * [Биномиальные коэффициенты](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=206) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p206.cpp))
+       * [Cамый дешевый путь](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=944) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p944.cpp))
 
