@@ -112,4 +112,5 @@ lein test
      + 2Б: Задачи на стек, очередь и дек
        * [Простой стек](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=54) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p54.cpp))
        * [Очередь с защитой от ошибок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=58) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p58.cpp))
+       * [Дек с защитой от ошибок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=61) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p61.cpp))
 
