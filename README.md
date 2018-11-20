@@ -115,4 +115,5 @@ lein test
        * [Дек с защитой от ошибок](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=61) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p61.cpp))
      + 2Б: Задачи на множители
        * [Проверка на простоту](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=310) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p310.cpp))
+       * [Разложение на простые множители](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=623) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p623.cpp))
 
