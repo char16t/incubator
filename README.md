@@ -116,6 +116,6 @@ lein test
      + 2Б: Задачи на множители
        * [Проверка на простоту](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=310) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p310.cpp))
        * [Разложение на простые множители](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=623) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p623.cpp))
-       * [Разложение на простые множители](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=973) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p973.cpp))
+       * [Простое число](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=973) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p973.cpp))
 
 
