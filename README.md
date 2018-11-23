@@ -118,6 +118,7 @@ lein test
        * [Разложение на простые множители](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=623) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p623.cpp))
        * [Простое число](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=973) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p973.cpp))
      + 2Б: Задачи на простую жадность
+       * [Создание архива](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1576) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1576.cpp))
        * [Решение задач](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2826) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p2826.cpp))
 
 
