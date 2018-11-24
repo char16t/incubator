@@ -120,5 +120,6 @@ lein test
      + 2Б: Задачи на простую жадность
        * [Создание архива](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1576) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1576.cpp))
        * [Решение задач](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2826) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p2826.cpp))
+       * [Путешествие](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=113075) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p113075.cpp))
 
 
