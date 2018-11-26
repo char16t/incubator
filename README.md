@@ -122,5 +122,7 @@ lein test
        * [Создание архива](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1576) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1576.cpp))
        * [Решение задач](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2826) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p2826.cpp))
        * [Путешествие](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=113075) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p113075.cpp))
-
+   - Уровень 2В
+     + 2В: Продвинутые задачи на НОД
+       * [Шестеренки](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1422) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1422.cpp))
 
