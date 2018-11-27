@@ -125,4 +125,5 @@ lein test
    - Уровень 2В
      + 2В: Продвинутые задачи на НОД
        * [Шестеренки](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1422) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1422.cpp))
+       * [Кинотеатр](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=404) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p404.cpp))
 
