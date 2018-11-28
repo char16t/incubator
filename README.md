@@ -126,4 +126,6 @@ lein test
      + 2В: Продвинутые задачи на НОД
        * [Шестеренки](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1422) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1422.cpp))
        * [Кинотеатр](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=404) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p404.cpp))
+     + 2В: Продвинутые задачи на квадратичные сортировки И на стек-очередь-дек
+       * [Минимальное число](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=720) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p720.cpp))
 
