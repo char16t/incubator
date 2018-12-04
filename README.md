@@ -128,4 +128,11 @@ lein test
        * [Кинотеатр](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=404) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p404.cpp))
      + 2В: Продвинутые задачи на квадратичные сортировки И на стек-очередь-дек
        * [Минимальное число](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=720) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p720.cpp))
-
+       * [Правильная скобочная последовательность](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=51) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p51.cpp))
+     + 2В: Продвинутые задачи на ДП
+       * [Плавные числа](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2998) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p2998.cpp))
+       * [Ход коня](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2999) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p2999.cpp))
+       * [Калькулятор](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=2963) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p2963.cpp))
+       * [0-1 рюкзак: наибольший вес](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=1119) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p1119.cpp))
+     + 2В: Дополнительные задачи на разные темы
+       * [Постфиксная запись](https://informatics.mccme.ru/moodle/mod/statements/view3.php?chapterid=52) ([**C++**](https://github.com/char16t/training/blob/master/algoprog.ru/p52.cpp))
