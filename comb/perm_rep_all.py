@@ -1,0 +1,12 @@
+n = 4
+result = []
+
+def recur(s, n, result):
+    if len(s) == n:
+        result.append(s)
+        return
+    for i in range(0, n):
+        recur(s + str(i + 1), n, result)
+
+recur("", n, result)
+print(result)
