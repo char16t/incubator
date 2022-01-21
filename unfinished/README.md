@@ -6,3 +6,4 @@ This directory contains my old unfinished projects.
 * `rf` Mar 29, 2019 - Apr 3, 2019 (Javascript)
 * `scala-lib` 18 Feb 2020 - 28 Feb 2020 (Scala)
 * `jsonrpc-spray-json` Feb 27, 2019 - Mar 4, 2019 (Scala)
+* `zero` 27 May 2019 - May 29, 2019 (Scala)
