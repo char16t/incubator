@@ -8,3 +8,4 @@ This directory contains my old unfinished projects.
 * `jsonrpc-spray-json` Feb 27, 2019 - Mar 4, 2019 (Scala)
 * `zero` 27 May 2019 - May 29, 2019 (Scala)
 * `calendar` 9 Aug 2019 (Scala)
+* `rb-scroll` 3 Sep 2019 - 11 Sep 2019 (JavaScript)

@@ -1,0 +1,7 @@
+@import '~antd/dist/antd.css';
+
+.demo-loading {
+  position: absolute;
+  bottom: -40px;
+  left: 50%;
+}
