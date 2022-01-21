@@ -9,3 +9,4 @@ This directory contains my old unfinished projects.
 * `zero` 27 May 2019 - May 29, 2019 (Scala)
 * `calendar` 9 Aug 2019 (Scala)
 * `rb-scroll` 3 Sep 2019 - 11 Sep 2019 (JavaScript)
+* `s-alpha` Sep 8, 2019 (JavaScript)
