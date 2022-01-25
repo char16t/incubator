@@ -11,4 +11,4 @@ This directory contains my old unfinished projects.
 * `rb-scroll` 3 Sep 2019 - 11 Sep 2019 (JavaScript)
 * `s-alpha` Sep 8, 2019 (JavaScript)
 * `demo-experience` Jun 17, 2019 (Scala)
-* `demo` (Scala, JavaScript, Google Cloud)
+* `demo` Nov 14, 2020 - Nov 16, 2020 (Scala, JavaScript, Google Cloud)
