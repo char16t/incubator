@@ -14,3 +14,4 @@ This directory contains my old unfinished projects.
 * `demo` Nov 14, 2020 - Nov 16, 2020 (Scala, JavaScript, Google Cloud)
 * `pws` Jun 26, 2019 - Jun 27, 2019 (JavaScript)
 * `masters-thesis` Aug 16, 2019 (LaTeX)
+* `assistant2-frontend` Jan 23, 2020 - Jan 24, 2020 (JavaScript)
