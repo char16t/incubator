@@ -1,0 +1,29 @@
+language: generic
+
+sudo: true
+
+matrix:
+    include:
+        - env: PROJECT=server
+          language: scala
+          scala:
+            - 2.12.9
+          install:
+            - cd server
+        - env: PROJECT=web
+          language: node_js
+          node_js:
+            - 'node'
+            - 'lts/*'
+          cache: npm
+          install:
+            - npm install -g rimraf
+            - npm install -g eslint
+            - npm install -g cross-env
+            - npm install -g codecov
+            - cd web
+            - npm install
+
+
+#script: if ci/build-condition.sh $TRAVIS_COMMIT_RANGE $PROJECT; then ../ci/build.sh; else echo "$PROJECT is NOT being built"; fi
+script: ../ci/build.sh

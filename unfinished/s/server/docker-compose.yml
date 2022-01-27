@@ -1,0 +1,51 @@
+version: '3.5'
+
+networks:
+  cluster-network:
+
+services:
+  myapp-0:
+    networks:
+      - cluster-network
+    image: char16t/myapp:0.1-SNAPSHOT
+    ports:
+      - '2551:2551'
+      - '8088:8082'
+    environment:
+      AKKA_ACTOR_SYSTEM_NAME: myapp
+      AKKA_REMOTING_BIND_PORT: 2551
+      AKKA_REMOTING_BIND_HOST: myapp-0
+      AKKA_SEED_NODES: myapp-0:2551,myapp-1:2552,myapp-2:2553
+      HTTP_HOST: 0.0.0.0
+      HTTP_PORT: 8082
+      CLUSTER_MEMBERSHIP_ASK_TIMEOUT: 5000
+  myapp-1:
+    networks:
+      - cluster-network
+    image: char16t/myapp:0.1-SNAPSHOT
+    ports:
+      - '2552:2551'
+      - '8089:8082'
+    environment:
+      AKKA_ACTOR_SYSTEM_NAME: myapp
+      AKKA_REMOTING_BIND_PORT: 2552
+      AKKA_REMOTING_BIND_HOST: myapp-1
+      AKKA_SEED_NODES: myapp-0:2551,myapp-1:2552,myapp-2:2553
+      HTTP_HOST: 0.0.0.0
+      HTTP_PORT: 8082
+      CLUSTER_MEMBERSHIP_ASK_TIMEOUT: 5000
+  myapp-2:
+    networks:
+      - cluster-network
+    image: char16t/myapp:0.1-SNAPSHOT
+    ports:
+      - '2553:2551'
+      - '8090:8082'
+    environment:
+      AKKA_ACTOR_SYSTEM_NAME: myapp
+      AKKA_REMOTING_BIND_PORT: 2553
+      AKKA_REMOTING_BIND_HOST: myapp-2
+      AKKA_SEED_NODES: myapp-0:2551,myapp-1:2552,myapp-2:2553
+      HTTP_HOST: 0.0.0.0
+      HTTP_PORT: 8082
+      CLUSTER_MEMBERSHIP_ASK_TIMEOUT: 5000
