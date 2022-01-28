@@ -16,3 +16,4 @@ This directory contains my old unfinished projects.
 * `masters-thesis` Aug 16, 2019 (LaTeX)
 * `assistant2-frontend` Jan 23, 2020 - Jan 24, 2020 (JavaScript)
 * `s` Sep 9, 2019 - Oct 8, 2019 (JavaScript, Scala, Docker, Kubernetes, Travis CI)
+* `um2` 10 Apr 2019 - Apr 10, 2019 (JavaScript)
