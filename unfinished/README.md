@@ -18,3 +18,4 @@ This directory contains my old unfinished projects.
 * `s` Sep 9, 2019 - Oct 8, 2019 (JavaScript, Scala, Docker, Kubernetes, Travis CI)
 * `um2` 10 Apr 2019 - Apr 10, 2019 (JavaScript)
 * `upm` Mar 19, 2019 - Mar 29, 2019(Scala,JavaScript, Ansible, HTTPS via Let's Encrypt)
+* `deploy` Feb 6, 2019 - Feb 10, 2019 (JHipster)
