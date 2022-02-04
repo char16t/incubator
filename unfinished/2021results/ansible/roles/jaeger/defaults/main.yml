@@ -1,0 +1,21 @@
+---
+jaeger_web_listen_address: "0.0.0.0:16686"
+jaeger_version: 1.21.0
+jaeger_all_in_one: true
+
+jaeger_binary_local_dir: ''
+jaeger_skip_install: false
+
+jaeger_services: {}
+
+jaeger_interface: "{{ ansible_default_ipv4.interface }}"
+
+jaeger_config_file: 'jaeger.yml.j2'
+jaeger_config_dir: /etc/jaeger
+jaeger_db_dir: /var/lib/jaeger
+
+jaeger_system_user: "jaeger"
+jaeger_system_group: "jaeger"
+
+jaeger_collector_tags: "{{ ansible_hostname }}"
+jaeger_memory_max_traces: 1000
