@@ -1,3 +1,16 @@
+# Monorepository with useless programs
+
+Directory structure:
+
+ * [/algoprog.ru](/algoprog.ru) - Problem solving from [algoprog.ru](https://algoprog.ru) and [informatics.mccme.ru](https://informatics.mccme.ru) sites in C++
+ * [/clojure](/clojure) - Problem solving from [algoprog.ru](https://algoprog.ru) and [informatics.mccme.ru](https://informatics.mccme.ru) sites in Clojure
+ * [/comb](/comb) - Some useful combinatorics algorithms implemented in Python
+ * [/kotlin](/kotlin) - Algorithms on graphs implemented on Kotlin
+ * [/scala](/scala) - Functional programming practice on pure Scala and using Cats library (and some other)
+ * [/unfinished](/unfinished) - Cemetery. All languages
+
+---
+
 Решения задач с [algoprog.ru](https://algoprog.ru) и [informatics.mccme.ru](https://informatics.mccme.ru). Старые решения на Clojure
 формально не проверялись, потому что Clojure нет среди доступных языков программирования. Решения на C и C++ формально проверены через
 систему на [informatics.mccme.ru](https://informatics.mccme.ru) и прошли все тесты.
