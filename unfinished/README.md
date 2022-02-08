@@ -2,6 +2,8 @@ This directory contains my old unfinished projects.
 
 All sensitive information, tokens and passwords cleaned.
 
+* `assistant` Jul 10, 2019 - Oct 19, 2019 (Scala) - Bot for Trello
+* `assistant2` Dec 6, 2019 - Jan 22, 2020 (Scala, JavaScript) - Expences tracker and analytics
 * `p` Jan 21, 2019 (Scala)
 * `p2` 28 Jan 2019 (Scala)
 * `scalal`  Jan 29, 2019 - Feb 4, 2019 (Scala)
@@ -23,5 +25,3 @@ All sensitive information, tokens and passwords cleaned.
 * `deploy` Feb 6, 2019 - Feb 10, 2019 (JHipster)
 * `n` Apr 18, 2019 - Apr 20, 2019 (JavaScript, Scala)
 * `2021results` Sep 7, 2021 - Sep 7, 2021 (Vagrant, Ansible)
-* `assistant2` Dec 6, 2019 - Jan 22, 2020 (Scala, JavaScript) - Expences tracker and analytics
-
