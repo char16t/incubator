@@ -1,0 +1,1 @@
+-- see: https://www.postgresql.org/docs/14/ddl-rowsecurity.html
