@@ -30,5 +30,6 @@ where t7.id = last_row.id
 ;
 
 -- select
-select * from t7 where entity_id=2 and updated_at is null order by created_at desc limit 1;
+select * from (select * from t7 where entity_id=2 and updated_at is null order by created_at desc limit 1) as found
+where found.deleted=false;
 
