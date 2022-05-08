@@ -2,7 +2,7 @@ package com.manenkov.sandbox.typelevel
 
 import cats.*
 import cats.syntax.all.*
-import cats.effect.*
+import cats.effect.{Sync, *}
 import cats.effect.syntax.all.*
 import org.typelevel.log4cats.syntax.*
 import org.typelevel.log4cats.Logger
@@ -45,11 +45,13 @@ object Main extends IOApp.Simple {
 
   def calevScheduler[F[_] : Temporal : Sync]: Scheduler[F, CalEvent] = CalevScheduler.systemDefault[F]
 
-  def task1[F[_]: Sync]: F[Unit] =
-    Sync[F].delay(println(LocalTime.now.toString + " task 1"))
+  def task1[F[_]](implicit S: Sync[F]): F[Unit] = S.delay {
+    println(LocalTime.now.toString + " task 1")
+  }.as(())
 
-  def task2[F[_]: Sync]: F[Unit] =
-      Sync[F].delay(println(LocalTime.now.toString + " task 2"))
+  def task2[F[_]](implicit S: Sync[F]): F[Unit] = S.delay {
+    println(LocalTime.now.toString + " task 2")
+  }.as(())
 
   def calevScheduledTasks[F[_] : Temporal : Sync]: Stream[F, Unit] = calevScheduler[F].schedule(List(
     oddSeconds -> Stream.eval {task1[F]},
