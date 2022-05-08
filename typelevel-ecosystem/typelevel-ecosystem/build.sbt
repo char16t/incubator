@@ -3,11 +3,13 @@ ThisBuild / scalaVersion := "3.1.1"
 
 lazy val root = (project in file("."))
   .settings(
-    name := "typelevel-ecosystem"
+    name := "typelevel-ecosystem",
   )
 
 libraryDependencies ++= Seq(
   "org.typelevel"         %% "cats-effect"              % "3.3.11"           withSources() withJavadoc(),
+  "eu.timepit"            %% "fs2-cron-core"            % "0.7.2"            withSources() withJavadoc(),
+  "eu.timepit"            %% "fs2-cron-calev"           % "0.7.2"            withSources() withJavadoc(),
 
   // Logging
   "org.typelevel"         %% "log4cats-slf4j"           % "2.3.0"            withSources() withJavadoc(),

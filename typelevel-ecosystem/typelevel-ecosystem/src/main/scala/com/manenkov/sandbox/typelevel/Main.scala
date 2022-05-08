@@ -7,9 +7,13 @@ import cats.effect.syntax.all.*
 import org.typelevel.log4cats.syntax.*
 import org.typelevel.log4cats.Logger
 import org.typelevel.log4cats.slf4j.Slf4jLogger
+import com.github.eikek.calev.CalEvent
+import eu.timepit.fs2cron.Scheduler
+import eu.timepit.fs2cron.calev.CalevScheduler
+import fs2.Stream
 
 import java.time.LocalTime
-import scala.concurrent.duration._
+import scala.concurrent.duration.*
 
 object Main extends IOApp.Simple {
 
@@ -34,5 +38,16 @@ object Main extends IOApp.Simple {
     _ <- info"Value of C is \"$c\""
   } yield c
 
-  val run = say3[IO].flatMap(IO.println)
+  val oddSeconds: CalEvent = CalEvent.unsafe("*-*-* *:*:1/2")
+  val everyFourSeconds: CalEvent = CalEvent.unsafe("*-*-* *:*:0/4")
+  def calevScheduler[F[_]: Temporal: Sync]: Scheduler[F, CalEvent] = CalevScheduler.systemDefault[F]
+  def calevScheduledTasks[F[_]: Temporal: Sync: Logger]: Stream[F, Unit] = calevScheduler[F].schedule(List(
+    oddSeconds      ->  Stream.eval {Sync[F].delay(println(LocalTime.now.toString + " task 1"))},
+    everyFourSeconds -> Stream.eval {Sync[F].delay(println(LocalTime.now.toString + " task 2"))},
+  ))
+
+  val run: IO[Unit] = for {
+    _ <- say3[IO].flatMap(IO.println)
+    _ <- calevScheduledTasks[IO].compile.drain
+  } yield ()
 }
