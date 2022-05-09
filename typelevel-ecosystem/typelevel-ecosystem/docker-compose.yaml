@@ -1,0 +1,14 @@
+version: '3.1'
+
+services:
+  db:
+    image: postgres
+    restart: always
+    environment:
+      POSTGRES_USER: pguser
+      POSTGRES_PASSWORD: pgpassword
+      POSTGRES_DB: pgdb
+    volumes:
+      - "./my-postgres.conf:/etc/postgresql/postgresql.conf"
+    ports:
+      - "5432:5432"

@@ -1,0 +1,5 @@
+CREATE TABLE person (
+  id   BIGSERIAL,
+  name VARCHAR  NOT NULL UNIQUE,
+  age  SMALLINT
+);
