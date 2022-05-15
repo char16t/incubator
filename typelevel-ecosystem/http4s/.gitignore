@@ -1,2 +1,7 @@
 target/
 
+# Native Image
+http4sBinaryImage
+http4sBinaryImage.build_artifacts.txt
+
+
