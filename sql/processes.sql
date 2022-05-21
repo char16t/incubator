@@ -26,6 +26,16 @@ $$ LANGUAGE plpgsql;
 CREATE FUNCTION p_schedule(pid bigint)
 RETURNS TABLE (id bigint) AS $$
 BEGIN
+  UPDATE processes 
+  SET state = 'BLOCKED'
+  FROM (
+  WITH RECURSIVE ancestors AS (
+  SELECT p.id, p.model, p.parent_id FROM processes p WHERE p.id = pid
+  UNION ALL
+  SELECT processes.id, processes.model, processes.parent_id FROM processes, ancestors WHERE processes.id = ancestors.parent_id)
+  select ancestors.id from ancestors where ancestors.id != pid) as ancestors
+  WHERE processes.id = ancestors.id;
+  
   RETURN QUERY
   UPDATE processes 
   SET state = 'RUNNING' 
@@ -54,6 +64,16 @@ $$ LANGUAGE plpgsql;
 CREATE FUNCTION p_request(pid bigint)
 RETURNS TABLE (id bigint) AS $$
 BEGIN
+  UPDATE processes 
+  SET state = 'BLOCKED'
+  FROM (
+  WITH RECURSIVE ancestors AS (
+  SELECT p.id, p.model, p.parent_id FROM processes p WHERE p.id = pid
+  UNION ALL
+  SELECT processes.id, processes.model, processes.parent_id FROM processes, ancestors WHERE processes.id = ancestors.parent_id)
+  select ancestors.id from ancestors where ancestors.id != pid) as ancestors
+  WHERE processes.id = ancestors.id;
+
   RETURN QUERY
   UPDATE processes 
   SET state = 'BLOCKED' 
@@ -82,6 +102,16 @@ $$ LANGUAGE plpgsql;
 CREATE FUNCTION p_allocate(pid bigint)
 RETURNS TABLE (id bigint) AS $$
 BEGIN
+  UPDATE processes 
+  SET state = 'BLOCKED'
+  FROM (
+  WITH RECURSIVE ancestors AS (
+  SELECT p.id, p.model, p.parent_id FROM processes p WHERE p.id = pid
+  UNION ALL
+  SELECT processes.id, processes.model, processes.parent_id FROM processes, ancestors WHERE processes.id = ancestors.parent_id)
+  select ancestors.id from ancestors where ancestors.id != pid) as ancestors
+  WHERE processes.id = ancestors.id;
+
   RETURN QUERY
   UPDATE processes 
   SET state = 'READY' 
@@ -110,6 +140,13 @@ $$ LANGUAGE plpgsql;
 CREATE FUNCTION p_done(pid bigint)
 RETURNS TABLE (id bigint) AS $$
 BEGIN
+  UPDATE processes 
+  SET state = 'READY'
+  FROM (
+    select * from processes where processes.id = pid
+  ) as r
+  WHERE processes.id = r.parent_id;
+
   RETURN QUERY
   UPDATE processes 
   SET state = 'FINISHED' 
@@ -152,12 +189,14 @@ select p_start('{ "b": "h" }'::jsonb, 7) as pid;
 select p_start('{ "b": "i" }'::jsonb, 8) as pid;
 select p_start('{ "b": "j" }'::jsonb, 9) as pid;
 
-
-select p_schedule(2) as pid;
+select p_schedule(7) as pid;
+select p_request(7) as pid;
+select p_allocate(7) as pid;
+select p_done(7) as pid;
 select p_schedule(3) as pid;
 select p_request(3) as pid;
 select p_allocate(3) as pid;
 select p_schedule(3) as pid;
 select p_done(3) as pid;
 
-select * from processes;
+select * from processes order by id;
