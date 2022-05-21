@@ -43,7 +43,8 @@ BEGIN
    )
    select cte.id
    from   cte
-   order  by lvl
+   union
+   select pid as id
   ) as descendants
   WHERE processes.id = descendants.id
   RETURNING processes.id;
@@ -70,7 +71,8 @@ BEGIN
    )
    select cte.id
    from   cte
-   order  by lvl
+   union
+   select pid as id
   ) as descendants
   WHERE processes.id = descendants.id
   RETURNING processes.id;
@@ -97,7 +99,8 @@ BEGIN
    )
    select cte.id
    from   cte
-   order  by lvl
+   union
+   select pid as id
   ) as descendants
   WHERE processes.id = descendants.id
   RETURNING processes.id;
@@ -124,7 +127,8 @@ BEGIN
    )
    select cte.id
    from   cte
-   order  by lvl
+   union
+   select pid as id
   ) as descendants
   WHERE processes.id = descendants.id
   RETURNING processes.id;
