@@ -34,7 +34,7 @@ BEGIN
        select p.id, p.model, 1 AS lvl
        from   processes a
        join   processes p ON p.parent_id = a.id
-       where  a.id = 2
+       where  a.id = pid
 
        union all
        select p.id, p.model, c.lvl + 1
@@ -61,7 +61,7 @@ BEGIN
        select p.id, p.model, 1 AS lvl
        from   processes a
        join   processes p ON p.parent_id = a.id
-       where  a.id = 2
+       where  a.id = pid
 
        union all
        select p.id, p.model, c.lvl + 1
@@ -88,7 +88,7 @@ BEGIN
        select p.id, p.model, 1 AS lvl
        from   processes a
        join   processes p ON p.parent_id = a.id
-       where  a.id = 2
+       where  a.id = pid
 
        union all
        select p.id, p.model, c.lvl + 1
@@ -115,7 +115,7 @@ BEGIN
        select p.id, p.model, 1 AS lvl
        from   processes a
        join   processes p ON p.parent_id = a.id
-       where  a.id = 2
+       where  a.id = pid
 
        union all
        select p.id, p.model, c.lvl + 1
