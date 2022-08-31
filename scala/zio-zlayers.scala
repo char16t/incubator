@@ -1,3 +1,19 @@
+/*
+* Experimenting with ZIO and ZLayer.
+*
+* Dependency structure:
+*               Hello
+*              /     \
+*        Welcome     Smile
+*    /‾‾‾‾  |  ‾‾‾\    /  ‾‾\‾‾‾‾‾‾‾‾‾‾‾‾‾‾\
+* Prefix Postfix SharedDep SmileEyes SmileMouth
+*
+* Output:
+* Hello, Valeriy!!![ref = SharedDep@435f8d95] ;))[ref = SharedDep@435f8d95]
+* Hello, Tatiana!!![ref = SharedDep@435f8d95] ;))[ref = SharedDep@435f8d95]
+* Hello, Anna!!![ref = SharedDep@435f8d95] ;))[ref = SharedDep@435f8d95]
+*/
+
 import zio._
 
 case class Welcome(pre: Prefix, post: Postfix, sharedDep: SharedDep) {
