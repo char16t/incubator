@@ -1,21 +1,21 @@
 import zio._
 
-import java.io.IOException
-
-case class Welcome(pre: Prefix, post: Postfix) {
+case class Welcome(pre: Prefix, post: Postfix, sharedDep: SharedDep) {
   def act(name: String): ZIO[Any, Nothing, String] =
     for {
       prefix <- pre.act()
       postfix <- post.act()
-    } yield (prefix + ", " + name + postfix)
+      sharedDep <- sharedDep.refStr()
+    } yield (prefix + ", " + name + postfix + "[ref = " + sharedDep + "]")
 }
 object Welcome {
   def act(name: String): ZIO[Welcome, Nothing, String] = ZIO.serviceWithZIO[Welcome](_.act(name))
-  var live: ZLayer[Prefix with Postfix, Throwable, Welcome] = ZLayer {
+  var live: ZLayer[Prefix with Postfix with SharedDep, Throwable, Welcome] = ZLayer {
     for {
       prefix <- ZIO.service[Prefix]
       postfix <- ZIO.service[Postfix]
-    } yield Welcome(prefix, postfix)
+      sharedDep <- ZIO.service[SharedDep]
+    } yield Welcome(prefix, postfix, sharedDep)
   }
 }
 
@@ -35,19 +35,21 @@ object Postfix {
   val live: ZLayer[Any, Nothing, Postfix] = ZLayer.fromZIO(ZIO.succeed(Postfix()))
 }
 
-case class Smile(eyes: SmileEyes, mouth: SmileMouth) {
+case class Smile(eyes: SmileEyes, mouth: SmileMouth, sharedDep: SharedDep) {
   def act(): ZIO[Any, Nothing, String] = for {
     e <- eyes.act()
     m <- mouth.act()
-  } yield (e + m)
+    s <- sharedDep.refStr()
+  } yield (e + m + "[ref = " + s + "]")
 }
 object Smile {
   def act(): ZIO[Smile, Nothing, String] = ZIO.serviceWithZIO[Smile](_.act())
-  val live: ZLayer[SmileEyes with SmileMouth, Nothing, Smile] = ZLayer {
+  val live: ZLayer[SmileEyes with SmileMouth with SharedDep, Nothing, Smile] = ZLayer {
     for {
       eyes <- ZIO.service[SmileEyes]
       mouth <- ZIO.service[SmileMouth]
-    } yield Smile(eyes, mouth)
+      sharedDep <- ZIO.service[SharedDep]
+    } yield Smile(eyes, mouth, sharedDep)
   }
 }
 
@@ -83,18 +85,28 @@ object Hello {
   }
 }
 
+class SharedDep() {
+  def refStr(): ZIO[Any, Nothing, String] = ZIO.succeed(this.toString)
+}
+object SharedDep {
+  def refStr(): ZIO[SharedDep, Nothing, String] = ZIO.serviceWithZIO[SharedDep](_.refStr())
+  val live: ZLayer[Any, Nothing, SharedDep] = ZLayer.fromZIO(ZIO.succeed(new SharedDep()))
+}
+
 object Main extends ZIOAppDefault {
 
   val welcome: ZLayer[Scope, Throwable, Welcome] = ZLayer.makeSome[Scope, Welcome](
     Welcome.live,
     Prefix.live,
-    Postfix.live
+    Postfix.live,
+    SharedDep.live
   )
 
   val smile: ZLayer[Scope, Throwable, Smile] = ZLayer.makeSome[Scope, Smile](
     Smile.live,
     SmileEyes.live,
-    SmileMouth.live
+    SmileMouth.live,
+    SharedDep.live
   )
 
   val hello = ZLayer.makeSome[Scope, Hello](
