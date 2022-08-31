@@ -10,13 +10,20 @@ case class Welcome(pre: Prefix, post: Postfix) {
     } yield (prefix + ", " + name + postfix)
 }
 object Welcome {
-  var live: ZLayer[Prefix with Postfix, Throwable, Welcome] = ZLayer.fromFunction(Welcome(_, _))
+  def act(name: String): ZIO[Welcome, Nothing, String] = ZIO.serviceWithZIO[Welcome](_.act(name))
+  var live: ZLayer[Prefix with Postfix, Throwable, Welcome] = ZLayer {
+    for {
+      prefix <- ZIO.service[Prefix]
+      postfix <- ZIO.service[Postfix]
+    } yield Welcome(prefix, postfix)
+  }
 }
 
 case class Prefix() {
   def act(): ZIO[Any, Nothing, String] = ZIO.succeed("Hello")
 }
 object Prefix {
+  def act(): ZIO[Prefix, Nothing, String] = ZIO.serviceWithZIO[Prefix](_.act())
   val live: ZLayer[Any, Nothing, Prefix] = ZLayer.fromZIO(ZIO.succeed(Prefix()))
 }
 
@@ -24,6 +31,7 @@ case class Postfix() {
   def act(): ZIO[Any, Nothing, String] = ZIO.succeed("!!!")
 }
 object Postfix {
+  def act(): ZIO[Postfix, Nothing, String] = ZIO.serviceWithZIO[Postfix](_.act())
   val live: ZLayer[Any, Nothing, Postfix] = ZLayer.fromZIO(ZIO.succeed(Postfix()))
 }
 
@@ -34,13 +42,20 @@ case class Smile(eyes: SmileEyes, mouth: SmileMouth) {
   } yield (e + m)
 }
 object Smile {
-  val live: ZLayer[SmileEyes with SmileMouth, Nothing, Smile] = ZLayer.fromFunction(Smile(_, _))
+  def act(): ZIO[Smile, Nothing, String] = ZIO.serviceWithZIO[Smile](_.act())
+  val live: ZLayer[SmileEyes with SmileMouth, Nothing, Smile] = ZLayer {
+    for {
+      eyes <- ZIO.service[SmileEyes]
+      mouth <- ZIO.service[SmileMouth]
+    } yield Smile(eyes, mouth)
+  }
 }
 
 case class SmileEyes() {
   def act(): ZIO[Any, Nothing, String] = ZIO.succeed(";")
 }
 object SmileEyes {
+  def act(): ZIO[SmileEyes, Nothing, String] = ZIO.serviceWithZIO[SmileEyes](_.act())
   val live: ZLayer[Any, Nothing, SmileEyes] = ZLayer.fromZIO(ZIO.succeed(SmileEyes()))
 }
 
@@ -48,6 +63,7 @@ case class SmileMouth() {
   def act(): ZIO[Any, Nothing, String] = ZIO.succeed("))")
 }
 object SmileMouth {
+  def act(): ZIO[SmileMouth, Nothing, String] = ZIO.serviceWithZIO[SmileMouth](_.act())
   val live: ZLayer[Any, Nothing, SmileMouth] = ZLayer.fromZIO(ZIO.succeed(SmileMouth()))
 }
 
@@ -58,7 +74,13 @@ case class Hello(smile: Smile, welcome: Welcome) {
   } yield (w + " " + s)
 }
 object Hello {
-  val live: ZLayer[Smile with Welcome, Nothing, Hello] = ZLayer.fromFunction(Hello(_, _))
+  def act(name: String): ZIO[Hello, Nothing, String] = ZIO.serviceWithZIO[Hello](_.act(name))
+  val live: ZLayer[Smile with Welcome, Nothing, Hello] = ZLayer {
+    for {
+      smile <- ZIO.service[Smile]
+      welcome <- ZIO.service[Welcome]
+    } yield (Hello(smile, welcome))
+  }
 }
 
 object Main extends ZIOAppDefault {
@@ -79,13 +101,16 @@ object Main extends ZIOAppDefault {
     Hello.live,
     welcome,
     smile
-  ).build.map(_.get[Hello])
+  )
 
-  def program(dep: Hello): ZIO[Any, IOException, Unit] = for {
-    _ <- dep.act("Valeriy").flatMap(Console.printLine(_))
-    _ <- dep.act("Tatiana").flatMap(Console.printLine(_))
-    _ <- dep.act("Anna").flatMap(Console.printLine(_))
+  val app = for {
+    w1 <- Hello.act("Valeriy")
+    w2 <- Hello.act("Tatiana")
+    w3 <- Hello.act("Anna")
+    _ <- Console.printLine(w1)
+    _ <- Console.printLine(w2)
+    _ <- Console.printLine(w3)
   } yield ()
 
-  val run = hello.flatMap(program)
+  val run = app.provideLayer(hello)
 }
