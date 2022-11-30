@@ -1,0 +1,8 @@
+.bsp/
+.vscode/
+.idea/
+target/
+/maven-repo/
+website/node_modules/
+website/build/
+website/static/api/
