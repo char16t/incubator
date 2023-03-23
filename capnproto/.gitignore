@@ -1,0 +1,9 @@
+.vscode/
+CMakeFiles/
+CMakeCache.txt
+cmake_install.cmake
+Makefile
+/demo-client
+/demo-server
+*.capnp.h
+*.capnp.c++
