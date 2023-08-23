@@ -6,6 +6,7 @@ Directory structure:
  * [/clojure](/clojure) - Problem solving from [algoprog.ru](https://algoprog.ru) and [informatics.mccme.ru](https://informatics.mccme.ru) sites in Clojure
  * [/comb](/comb) - Some useful combinatorics algorithms implemented in Python
  * [/kotlin](/kotlin) - Algorithms on graphs implemented on Kotlin
+ * [/java](/java) - Data structures, algorithms written on pure java from scratch + actors
  * [/scala](/scala) - Functional programming practice on pure Scala and using Cats library (and some other)
  * [/unfinished](/unfinished) - Cemetery. All languages
 
