@@ -2,12 +2,20 @@
 
 Directory structure:
 
+ * [/adoc](/adoc) - AsciiDoc sandbox. It is a best format for large documentation
  * [/algoprog.ru](/algoprog.ru) - Problem solving from [algoprog.ru](https://algoprog.ru) and [informatics.mccme.ru](https://informatics.mccme.ru) sites in C++
+ * [/capnproto](/capnproto) - Experiments with Cap'n Proto. Cap'n Proto is an insanely fast data interchange format and capability-based RPC system.
  * [/clojure](/clojure) - Problem solving from [algoprog.ru](https://algoprog.ru) and [informatics.mccme.ru](https://informatics.mccme.ru) sites in Clojure
  * [/comb](/comb) - Some useful combinatorics algorithms implemented in Python
+ * [/cpp](/cpp) - External and internal web-services on C++ and Cap'n'Proto
+ * [/crypto](/crypto) - Cryptography
  * [/kotlin](/kotlin) - Algorithms on graphs implemented on Kotlin
  * [/java](/java) - Data structures, algorithms written on pure java from scratch + actors
  * [/scala](/scala) - Functional programming practice on pure Scala and using Cats library (and some other)
+ * [/ml](/ml) - Machine Learning
+ * [/sql](/sql) - State machine, tree-structures, versioning, discontinuous ranges intersection and other non-trivial implementations on SQL
+ * [/typelevel-ecosystem](/typelevel-ecosystem) - Web-services on Scala wrtten in functional style
+ * [/windows](/windows) - Automation for Windows
  * [/unfinished](/unfinished) - Cemetery. All languages
 
 ---
