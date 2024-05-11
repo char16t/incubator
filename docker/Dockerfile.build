@@ -1,0 +1,30 @@
+# Build JAR-file using javac in Docker
+# Execute:
+#
+#    mkdir -p target/docker-build
+#    docker build --build-arg UNAME=$$(id -un) --build-arg UID=$$(id -u) --build-arg GID=$$(id -g) -f Dockerfile.build -t application-image .
+#    docker run -it --rm -v $$(pwd)/target/docker-build:/shared_data application-image
+#    echo $$(docker image rm application-image)
+#
+# Get result in ./shared_data directory
+
+FROM amazoncorretto:21 as baseimage
+RUN yum install -y make shadow-utils
+
+FROM baseimage
+ARG UNAME=testuser
+ARG UID=1000
+ARG GID=1000
+RUN groupadd -g $GID -o $UNAME
+RUN useradd -m -u $UID -g $GID -o -s /bin/bash $UNAME
+USER $UNAME
+
+WORKDIR /application
+COPY Makefile /application
+COPY src /application/src
+RUN make jar
+RUN make native-image
+
+VOLUME ["/shared_data"]
+
+ENTRYPOINT ["/bin/sh", "-c", "cp -r /application/target/* /shared_data"]
