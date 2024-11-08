@@ -1,6 +1,0 @@
-*.aux
-*.dvi
-*.log
-*.pdf
-*.toc
-target/CURRENT_VERSION

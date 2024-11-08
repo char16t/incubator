@@ -1,7 +1,0 @@
----
-- name: restart jaeger
-  become: true
-  systemd:
-    daemon_reload: true
-    name: jaeger
-    state: restarted

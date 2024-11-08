@@ -16,7 +16,6 @@ Directory structure:
  * [/sql](/sql) - State machine, tree-structures, versioning, discontinuous ranges intersection and other non-trivial implementations on SQL
  * [/typelevel-ecosystem](/typelevel-ecosystem) - Web-services on Scala wrtten in functional style
  * [/windows](/windows) - Automation for Windows
- * [/unfinished](/unfinished) - Cemetery. All languages
 
 ---
 
